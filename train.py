@@ -4,6 +4,7 @@
 import datetime
 import os
 from functools import partial
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 import numpy as np
 import torch
