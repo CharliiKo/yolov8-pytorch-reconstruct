@@ -1,7 +1,7 @@
 torch
 torchvision
 tensorboard
-scipy==1.14.0
+scipy
 numpy==1.26.4
 matplotlib
 opencv_python
