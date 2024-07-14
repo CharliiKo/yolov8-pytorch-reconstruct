@@ -1,1 +1,1 @@
-This file is used to save detection vedio "detect.mp4".
+This file is used to save detection video "detect.mp4".
