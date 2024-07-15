@@ -60,8 +60,8 @@ def convert_annotation(year, image_id, list_file):
         list_file.write(" " + ",".join([str(a) for a in b]) + ',' + str(cls_id))
         
         nums[classes.index(cls)] = nums[classes.index(cls)] + 1
-        
-if __name__ == "__main__":
+
+if __name__ == "__main__":        
     random.seed(0)
     if " " in os.path.abspath(VOCdevkit_path):
         raise ValueError("数据集存放的文件夹路径与图片名称中不可以存在空格，否则会影响正常的模型训练，请注意修改。")
@@ -148,6 +148,3 @@ if __name__ == "__main__":
 
         if np.sum(nums) == 0:
             print("在数据集中并未获得任何目标，请注意修改classes_path对应自己的数据集，并且保证标签名字正确，否则训练将会没有任何效果！")
-            print("在数据集中并未获得任何目标，请注意修改classes_path对应自己的数据集，并且保证标签名字正确，否则训练将会没有任何效果！")
-            print("在数据集中并未获得任何目标，请注意修改classes_path对应自己的数据集，并且保证标签名字正确，否则训练将会没有任何效果！")
-            print("（重要的事情说三遍）。")
